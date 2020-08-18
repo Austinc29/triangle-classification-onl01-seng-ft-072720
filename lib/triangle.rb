@@ -19,6 +19,8 @@ class Triangle
       :scalene
     elsif(isosceles?)
       :isosceles
+    elsif(illegal?)
+      :illegal
     end
   end
 
