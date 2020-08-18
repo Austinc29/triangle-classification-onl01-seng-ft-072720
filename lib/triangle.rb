@@ -30,7 +30,13 @@ class Triangle
     end
   end
   
-  
+  def illegal?
+    @sides.each do |length|
+      if(length <= -0)
+        return true
+      end
+    end
+  end
 
   def equilateral?
     (@side1 == @side2) && (@side1 == @side3)
